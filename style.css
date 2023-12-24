@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .menu header img {
+    width: 100px;
+  }
+  
+  .menu .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .menu .content a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .phone {
+    display: none;
+  }
+  
+  img[alt="oreo"] {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .menu header img {
+      width: 80px;
+    }
+  
+    .menu .content {
+      display: none;
+    }
+  
+    .phone {
+      display: block;
+        cursor: pointer;
+    }
+}
